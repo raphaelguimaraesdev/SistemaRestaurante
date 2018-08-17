@@ -1,0 +1,56 @@
+<div class="row justify-content-center">
+    <img src="http://clipart.coolclips.com/480/vectors/tf05374/CoolClips_vc111462.png" class="img-fluid" alt="Responsive image">
+</div>
+<div class="row">
+    <nav class="navbar navbar-light bg-dark col-12">
+        <a class="navbar-brand text-light" href="#">Melhores Pratos</a>
+    </nav>
+</div>
+<div class="row">
+    <table class="table table-light">
+        <thead>
+            <tr>
+                <th scope="col">Código</th>
+                <th scope="col">Restaurante</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Valor</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let prato of Pratos">
+            <tr class="animate-repeat">
+                <th scope="row">{{ prato.Codigo }}</th>
+                <td>{{ prato.CodigoRestaurante }}</td>
+                <td>{{ prato.Nome }}</td>
+                <td>R$ {{ prato.Valor }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="row justify-content-center mt-4 mb-4">
+    <img src="http://clipart.coolclips.com/480/vectors/tf05310/CoolClips_vc062746.png" class="img-fluid" alt="Responsive image">
+</div>
+<div class="row">
+    <nav class="navbar navbar-light bg-dark col-12">
+        <a class="navbar-brand text-light" href="#">Melhores Restaurantes</a>
+    </nav>
+</div>
+<div class="row">
+    <table class="table table-light">
+        <thead>
+            <tr>
+                <th scope="col">Código</th>
+                <th scope="col">Restaurante</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Valor</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let prato of Pratos">
+            <tr class="animate-repeat">
+                <th scope="row">{{ prato.Codigo }}</th>
+                <td>{{ prato.CodigoRestaurante }}</td>
+                <td>{{ prato.Nome }}</td>
+                <td>R$ {{ prato.Valor }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
